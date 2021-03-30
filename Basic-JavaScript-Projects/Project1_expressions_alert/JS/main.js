@@ -16,3 +16,7 @@ document.write(s);
 // Just because
 window.alert("Why not?");
 
+// Change text when hovering
+function change_me() {
+    document.getElementById("change_me").innerHTML = "Good bye!";
+}
