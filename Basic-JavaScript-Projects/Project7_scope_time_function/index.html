@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JS/main.js"></script>
+</head>
+<body>
+
+    <!-- Show message of the day -->
+    <p id="motd" onclick="motd()">Show message of the day (click me)</p>
+    
+    <!-- Boom! Just being silly, using if/else -->
+    <p id="self-destruct" onclick="ynot()">Do not click!</p>
+
+    <!-- More if/else, display greeting based on length of name -->
+    <p>Enter your name and you will be greeted based on its length.</p>
+    <input id="name"/>
+    <button onclick="greet()">Greet me</button>
+    <p id="greeting"></p>
+
+    <!-- Time of day - more conditionals if-else-if -->
+    <p id="Time_of_Day"></p>
+    <button onclick="timeFunction()">Click to get the time</button>
+
+
+</body>
+</html>
