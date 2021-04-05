@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JS/main.js"></script>
+</head>
+<body>
+    
+    <!-- String concatenation -->
+    <p id="concat_me" onclick="concatMe()">Click to create a sentence</p>
+
+    <text id="uppercase">i should be uppercase</text>
+    <button onclick="makeUpper('uppercase')">Make uppercase</button>
+
+    <p>
+        Search for a word from this sentence: <br>
+        <q id="sentence">The quick brown fox jumped over the lazy dog.</q><br>
+        <input type="text" id="search_str" value="fox"/>
+        <button onclick="search()">Search</button>
+        <p id="found"></p>
+    </p>
+
+    <!-- Number to string -->
+    <p onclick="numToString()" id="num_to_string">Click for a number as a string</p>
+
+    <!-- Number precision -->
+    <p onclick="setPrecision()" id="num_precision">123.123456789 (Click to set precision to 5)</p>
+
+    <!-- Set fixed decimal places/round -->
+    <p onclick="setFixed()" id="num_fixed">5738.12847598 (Click to set to 2 decimal places)</p>
+
+    <!-- Primitive value of string -->
+    <p onclick="getValueOf()" id="value_of">Show primitive value of [String: 'foo']</p>
+
+</body>
+</html>
