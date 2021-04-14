@@ -44,7 +44,7 @@ function handleOperator(nextOperator) {
     // Calculator.firstOperand if it doesn't already exist.
     const valueOfInput = parseFloat(displayValue);
     // Check if an operator already exists and if waitSecondOperand is true,
-    // then update the operator and exit from the funciton.
+    // then update the operator and exit from the function.
     if (operator && Calculator.waitSecondOperand) {
         Calculator.operator = nextOperator;
         return;
@@ -54,7 +54,7 @@ function handleOperator(nextOperator) {
     // check if an operator already exists
     } else if (operator) {
         const valueNow = firstOperand || 0;
-        // If operator exists, property lookup i sperformed for the operator
+        // If operator exists, property lookup is performed for the operator
         // in the performCalculation object and the function that matches the
         // operator is executed.
         let result = performCalculation[operator](valueNow, valueOfInput);
