@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React_1</title>
+  <script src="https://fb.me/react-0.14.3.js"></script>
+  <script src="https://fb.me/react-dom-0.14.3.js"></script>
+</head>
+
+<body>
+  <div id="myReactCode"></div>
+  <script>
+    // let timePassed;
+    // let secondsPassed;
+    // let text;
+    var Counter = React.createClass({
+      render: () => {
+        var timePassed = Math.round(this.props.timePassed / 100);
+        var secondsPassed = timePassed / 10 + (timePassed % 10 ? '' : '.0');
+        var text = `My React code started running ${secondsPassed} seconds ago`;
+        return React.DOM.p(null, text);
+      }
+    });
+
+    let counterFactory = React.createFactory(Counter);
+
+    let startCounting = new Date().getTime();
+    setInterval(() => {
+      ReactDOM.render(
+        counterFactory({timePassed: new Date().getTime() - startCounting}),
+        document.getElementById('myReactCode')
+      );
+    });
+
+  </script>
+</body>
+
+</html>

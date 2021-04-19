@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Stuff</title>
+</head>
+<body>
+    <p id="XMLExample">
+        <script>
+            let xmlParser, xmlDoc;
+            // Create xml text string to parse
+            let movie = "<movie>"
+                + "<title>Real Genius</title>"
+                + "<director>Martha Coolidge</director>"
+                + "<staring>Val Kilmer</staring>"
+                + "<year>1985</year>"
+                + "</movie>";
+
+            // Create new DOM parser
+            xmlParser = new DOMParser();
+
+            // Create new XML DOM object from movie string
+            xmlDoc = xmlParser.parseFromString(movie, "text/xml");
+
+            document.getElementById("XMLExample").innerHTML = 
+                xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+        </script>
+    </p>
+</body>
+</html>
