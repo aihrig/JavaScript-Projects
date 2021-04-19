@@ -1,0 +1,12 @@
+/* Styling for inputs */
+input[type=text] {
+    padding: 5px;
+    border: 2px solid rgb(247, 250, 102);
+    background-color: cadetblue;
+    border-radius: 2px;
+}
+
+input[type=submit] {
+    border-radius: 2px;
+    border: 0;
+}

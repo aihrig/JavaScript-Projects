@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom</title>
+    <style>
+        .zoom-img {
+            width: 600px;
+            height: auto;
+            /* ease | ease-in | ease-out | linear */
+            transition: transform ease-in-out 0.3s;
+        }
+
+        .zoom-img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <img class="zoom-img" src="https://www.slashfilm.com/wp/wp-content/images/Darth-Vader.jpg" alt="Darth Vader">
+</body>
+</html>
