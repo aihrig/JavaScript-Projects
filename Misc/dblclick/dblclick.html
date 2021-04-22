@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onDblClick()</title>
+    <style>
+        div {
+            color: black;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p id="riker-text" ondblclick="makeBig()">
+            Shields up! Rrrrred alert! A surprise party? Mr. Worf, I hate surprise parties. I would *never* do that to
+            you. We have
+            a saboteur aboard. About four years. I got tired of hearing how young I looked. Could someone survive inside
+            a
+            transporter buffer for 75 years? Ensign Babyface! Did you come here for something in particular or just
+            general
+            Riker-bashing? For an android with no feelings, he sure managed to evoke them in others. Yesterday I did not
+            know how to
+            eat gagh. Well, I'll say this for him - he's sure of himself. Is it my imagination, or have tempers become a
+            little
+            frayed on the ship lately? When has justice ever been as simple as a rule book? and attack the Romulans.
+            This is not
+            about revenge. This is about justice. Your head is not an artifact!
+        </p>
+    </div>
+    <script>
+        function makeBig() {
+            document.getElementById("riker-text").style.fontSize = "50px";
+        }
+    </script>
+</body>
+
+</html>
